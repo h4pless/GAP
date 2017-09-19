@@ -133,6 +133,7 @@ public class telaLogin extends javax.swing.JFrame {
             this.show(false);
             telaPrincipal tl_main = new telaPrincipal();
             tl_main.show();
+            //
         }else{
             JOptionPane.showMessageDialog(null, "Acesso Negado");
         }

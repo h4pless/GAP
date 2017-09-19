@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package view;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author aleez
@@ -44,6 +44,11 @@ public class telaCadastroMaterial extends javax.swing.JFrame {
         jLabel2.setText("Quantidade :");
 
         jButton1.setText("Inserir");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -97,6 +102,11 @@ public class telaCadastroMaterial extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Material inserido!");
+        this.setVisible(false);       
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
